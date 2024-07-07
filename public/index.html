@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>My Portofolio</title>
+    <!-- Icon -->
+    <link
+      rel="Icon"
+      href="./img/logoKonoha.png"
+    />
+    <!-- TailwindCSS -->
+    <link
+      rel="stylesheet"
+      href="./css/tailwind.css"
+    />
+    <!-- Font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl Corousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body class="bg-dark">
+    <!-- Navbar -->
+    <nav class="py-2 bg-zinc-900">
+      <div class="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <div class="flex items-center flex-shrink-0">
+            <span class="text-2xl font-bold text-white">Muhammad Yurisyah<span class="text-primary">.</span></span>
+          </div>
+          <!-- Navlink -->
+          <div class="hidden sm:block ml:auto">
+            <div class="flex items-baseline ml-10 space-x-4">
+              <a
+                href="#"
+                class="px-3 py-2 text-sm font-medium text-white hover:underline"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="px-3 py-2 text-sm font-medium text-white hover:underline"
+                >Services</a
+              >
+              <a
+                href="#"
+                class="px-3 py-2 text-sm font-medium text-white hover:underline"
+                >Work</a
+              >
+              <a
+                href="#"
+                class="px-3 py-2 text-sm font-medium text-white hover:underline"
+                >About Me</a
+              >
+              <a
+                href="#"
+                class="text-white border border-primary px-4 rounded-none py-[10px] hover:bg-primary text-sm font-medium"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="flex items-center sm:hidden">
+            <button
+              id="mobile-menu-btn"
+              tyep="button"
+              class="text-white hover:text-light-gray focus:outline-none focus:text-light-gray"
+              aria-label="Toggle menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden sm:hidden"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="#"
+            class="block px-3 py-2 text-base font-medium text-white hover:underline"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="block px-3 py-2 text-base font-medium text-white hover:underline"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="block px-3 py-2 text-base font-medium text-white hover:underline"
+            >Work</a
+          >
+          <a
+            href="#"
+            class="block px-3 py-2 text-base font-medium text-white hover:underline"
+            >About Me</a
+          >
+          <a
+            href="#"
+            class="block px-3 py-2 text-base font-medium text-white hover:underline"
+            >Blog</a
+          >
+          <div class="px-2">
+            <a
+              href="#"
+              class="block px-3 py-2 mt-4 text-base font-medium text-white border rounded-none border-primary hover:bg-primary focus:bg-primary"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Hero -->
+    <section class="text-white hero py-28">
+      <div class="container max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+        <h4 class="text-2xl font-bold text-primary lg:leading-[94px] lg:text-[38px]">Hello, I'm Yuris</h4>
+        <h1 class="text-5xl mt-3 font-bold lg:text-[88px] lg:leading-[94px]"><span id="typed"></span></h1>
+        <p class="w-full mt-4 text-base font-normal text-gray lg:w-3/6 mt-9">
+          I'm From Palembang Indonesia and has an interest in front end and software engineering. Can operate Microsoft Office applications and master the programming languages Java Script, PHP, HTML and React and also Laravel
+          <a href="#"><span class="font-semibold underline">Pabloo</span></a> zigi zaga zifgdfs fsfsdf
+        </p>
+        <div class="mt-14">
+          <div class="flex items-center gap-3 mt-6">
+            <a
+              href="#"
+              class="px-6 py-3 mr-4 text-lg font-medium text-white rounded-none btn-primary bg-primary"
+              >Email Me
+            </a>
+            <a
+              href="#"
+              class="flex items-center text-lg font-bold text-gray"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                />
+              </svg>
+              <span class="ml-2 hover:underline">Download CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Hero -->
+    <!-- Services  -->
+    <section class="services">
+      <div class="container max-w-6xl px-4 mx-auto sm:px6 lg:px-8">
+        <div class="items-start justify-between block md:flex">
+          <h2 class="w-full mb-2 text-3xl font-bold text-white lg:text-5xl md:w-1/2 lg:w-3/5">1 years experience working</h2>
+          <div class="mt-6 md:mt-0 w full md:w-[360px]">
+            <div class="flex items-center">
+              <hr class="mr-4 w-14 border-primary" />
+              <h6 class="mr-4 text-xl font-bold text-primary">Services</h6>
+            </div>
+            <p class="mt-2 text-gray">Discover the services I offer,designed to ensure the succes of your project.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-6 mt-20 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Boerder Product Design -->
+          <div
+            class="px-6 py-16 rounded-none shadow-md card-service bg-light-dark"
+            style="position: relative"
+          >
+            <svg
+              width="100%"
+              height="6"
+              style="position: absolute; bottom: 0; left: 0"
+              viewBox="0 0 360 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="100%"
+                height="6"
+                fill="#3490DC"
+              />
+            </svg>
+            <svg
+              width="87"
+              height="66"
+              viewBox="0 0 87 66"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                cx="63.5"
+                cy="46"
+                rx="23.5"
+                ry="20"
+                fill="#3490DC"
+              />
+              <path
+                d="M32.1132 22.66H56.9717C60.0093 22.66 62.4717 25.1224 62.4717 28.16V40.96C62.4717 43.9975 60.0093 46.46 56.9717 46.46H32.1132C29.0757 46.46 26.6132 43.9975 26.6132 40.96V28.16C26.6132 25.1224 29.0757 22.66 32.1132 22.66Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+              <path
+                d="M11.3491 10.42H37.5472C40.5847 10.42 43.0472 12.8824 43.0472 15.92V25.84C43.0472 28.8775 40.5847 31.34 37.5472 31.34H11.3491C8.31149 31.34 5.84906 28.8776 5.84906 25.84V15.92C5.84906 12.8824 8.3115 10.42 11.3491 10.42Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+              <path
+                d="M46.3962 8.28C46.3962 11.5427 43.8474 14.06 40.8585 14.06C37.8695 14.06 35.3207 11.5427 35.3207 8.28C35.3207 5.01729 37.8695 2.5 40.8585 2.5C43.8474 2.5 46.3962 5.01729 46.3962 8.28Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+              <path
+                d="M13.5755 29.16C13.5755 32.4227 11.0267 34.94 8.03774 34.94C5.04879 34.94 2.5 32.4227 2.5 29.16C2.5 25.8973 5.04879 23.38 8.03774 23.38C11.0267 23.38 13.5755 25.8973 13.5755 29.16Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+              <path
+                d="M46.3962 29.16C46.3962 32.4227 43.8474 34.94 40.8585 34.94C37.8695 34.94 35.3207 32.4227 35.3207 29.16C35.3207 25.8973 37.8695 23.38 40.8585 23.38C43.8474 23.38 46.3962 25.8973 46.3962 29.16Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+              <path
+                d="M13.5755 8.28C13.5755 11.5427 11.0267 14.06 8.03774 14.06C5.04879 14.06 2.5 11.5427 2.5 8.28C2.5 5.01729 5.04879 2.5 8.03774 2.5C11.0267 2.5 13.5755 5.01729 13.5755 8.28Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+              <path
+                d="M68.5 23.4C68.5 26.6627 65.9512 29.18 62.9623 29.18C59.9733 29.18 57.4245 26.6627 57.4245 23.4C57.4245 20.1373 59.9733 17.62 62.9623 17.62C65.9512 17.62 68.5 20.1373 68.5 23.4Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+              <path
+                d="M68.5 45.72C68.5 48.9827 65.9512 51.5 62.9623 51.5C59.9733 51.5 57.4245 48.9827 57.4245 45.72C57.4245 42.4573 59.9733 39.94 62.9623 39.94C65.9512 39.94 68.5 42.4573 68.5 45.72Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+              <path
+                d="M29.6509 45.72C29.6509 48.9827 27.1022 51.5 24.1132 51.5C21.1243 51.5 18.5755 48.9827 18.5755 45.72C18.5755 42.4573 21.1243 39.94 24.1132 39.94C27.1022 39.94 29.6509 42.4573 29.6509 45.72Z"
+                fill="#1F2937"
+                stroke="white"
+                stroke-width="5"
+              />
+            </svg>
+            <h5 class="text-2xl font-bold text-white mt-11">Product Design</h5>
+            <p class="mt-5 mb-4 text-base leading-5 text-gray">I have strong abilities in creating innovative and functional product designs</p>
+          </div>
+          <!-- Border Front End Dev -->
+          <div
+            class="px-6 py-16 rounded-none shadow-md card-service bg-light-dark"
+            style="position: relative"
+          >
+            <svg
+              width="111"
+              height="77"
+              viewBox="0 0 111 77"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d_6_20)">
+                <path
+                  d="M16.8157 57.8857C13.713 57.6782 12.0233 54.1648 13.7982 51.6115L30.9359 26.9577C32.6847 24.4418 36.497 24.7458 37.8251 27.5071L50.6456 54.1648C51.9736 56.9261 49.8311 60.094 46.7739 59.8895L16.8157 57.8857Z"
+                  fill="#1F2937"
+                />
+                <path
+                  d="M16.2615 53.3238L33.3992 28.67C33.8364 28.041 34.7895 28.117 35.1215 28.8074L47.9421 55.465C48.2741 56.1554 47.7384 56.9473 46.9741 56.8962L17.0159 54.8924C16.2402 54.8405 15.8178 53.9622 16.2615 53.3238Z"
+                  stroke="white"
+                  stroke-width="6"
+                />
+              </g>
+              <g filter="url(#filter1_d_6_20)">
+                <path
+                  d="M94.673 19.1189C97.7647 19.4523 99.3102 23.0314 97.433 25.5105L79.3079 49.4477C77.4582 51.8904 73.6614 51.4318 72.4467 48.6188L60.7198 21.4622C59.5051 18.6492 61.7745 15.571 64.8209 15.8995L94.673 19.1189Z"
+                  fill="#1F2937"
+                />
+                <path
+                  d="M95.0413 23.6995L76.9162 47.6367C76.4537 48.2474 75.5045 48.1327 75.2009 47.4294L63.474 20.2729C63.1703 19.5697 63.7376 18.8001 64.4992 18.8822L94.3513 22.1016C95.1242 22.1849 95.5106 23.0797 95.0413 23.6995Z"
+                  stroke="white"
+                  stroke-width="6"
+                />
+              </g>
+              <line
+                x1="46.2097"
+                y1="15.6045"
+                x2="66.2097"
+                y2="61.6045"
+                stroke="white"
+                stroke-width="7"
+              />
+              <path
+                d="M31.2098 19.6045L53.5 67"
+                stroke="#1F2937"
+                stroke-width="7"
+              />
+              <line
+                x1="57.6683"
+                y1="7.4051"
+                x2="77.6683"
+                y2="53.4051"
+                stroke="#1F2937"
+                stroke-width="8"
+              />
+              <defs>
+                <filter
+                  id="filter0_d_6_20"
+                  x="9.07712"
+                  y="25.2405"
+                  width="45.9698"
+                  height="42.6584"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="out"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_6_20"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_6_20"
+                    result="shape"
+                  />
+                </filter>
+                <filter
+                  id="filter1_d_6_20"
+                  x="56.3861"
+                  y="15.8753"
+                  width="45.8629"
+                  height="43.1582"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="out"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_6_20"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_6_20"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <h5 class="text-2xl font-bold text-white mt-11">Front-End Development</h5>
+            <p class="mt-5 mb-4 text-base leading-5 text-gray">As a front-end developer, I have experience in developing web applications using HTML, CSS, and JavaScript.</p>
+          </div>
+          <!-- Border Design Grafis -->
+          <div
+            class="px-6 py-16 rounded-none shadow-md card-service bg-light-dark"
+            style="position: relative"
+          >
+            <svg
+              width="65"
+              height="63"
+              viewBox="0 0 65 63"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.1818 13.7646L48.0837 27.2534L32.7373 41.7679L15.8354 28.2791L31.1818 13.7646Z"
+                fill="#1F2937"
+              />
+              <path
+                d="M31.1818 13.7646L48.0837 27.2534L32.7373 41.7679L15.8354 28.2791L31.1818 13.7646Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M31.1818 13.7646L48.0837 27.2534L32.7373 41.7679L15.8354 28.2791L31.1818 13.7646Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M31.1818 13.7646L48.0837 27.2534L32.7373 41.7679L15.8354 28.2791L31.1818 13.7646Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M31.1818 13.7646L48.0837 27.2534L32.7373 41.7679L15.8354 28.2791L31.1818 13.7646Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M31.1818 13.7646L48.0837 27.2534L32.7373 41.7679L15.8354 28.2791L31.1818 13.7646Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M32.0865 21.2321L48.9885 34.7209L33.6421 49.2354L16.7401 35.7466L32.0865 21.2321Z"
+                fill="#1F2937"
+              />
+              <path
+                d="M32.0865 21.2321L48.9885 34.7209L33.6421 49.2354L16.7401 35.7466L32.0865 21.2321Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M32.0865 21.2321L48.9885 34.7209L33.6421 49.2354L16.7401 35.7466L32.0865 21.2321Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M32.0865 21.2321L48.9885 34.7209L33.6421 49.2354L16.7401 35.7466L32.0865 21.2321Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M32.0865 21.2321L48.9885 34.7209L33.6421 49.2354L16.7401 35.7466L32.0865 21.2321Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M32.0865 21.2321L48.9885 34.7209L33.6421 49.2354L16.7401 35.7466L32.0865 21.2321Z"
+                stroke="#DC34C1"
+                stroke-opacity="0.69"
+                stroke-width="21"
+              />
+              <path
+                d="M31.9532 21.2321L38.8604 26.7445L32.6951 32.5757L25.7878 27.0633L31.9532 21.2321Z"
+                fill="#1F2937"
+              />
+              <path
+                d="M31.9532 21.2321L38.8604 26.7445L32.6951 32.5757L25.7878 27.0633L31.9532 21.2321Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M31.9532 21.2321L38.8604 26.7445L32.6951 32.5757L25.7878 27.0633L31.9532 21.2321Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M31.9532 21.2321L38.8604 26.7445L32.6951 32.5757L25.7878 27.0633L31.9532 21.2321Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M31.9532 21.2321L38.8604 26.7445L32.6951 32.5757L25.7878 27.0633L31.9532 21.2321Z"
+                stroke="#3490DC"
+                stroke-width="21"
+              />
+              <path
+                d="M31.9532 21.2321L38.8604 26.7445L32.6951 32.5757L25.7878 27.0633L31.9532 21.2321Z"
+                stroke="#1E1E1E"
+                stroke-width="21"
+              />
+              <mask
+                id="path-4-inside-1_7_35"
+                fill="white"
+              >
+                <path d="M31.5875 12.2536L48.2454 25.5476L32.9437 40.0198L16.2858 26.7258L31.5875 12.2536Z" />
+                <path d="M31.5875 19.5246L48.2454 32.8186L32.9437 47.2908L16.2858 33.9968L31.5875 19.5246Z" />
+              </mask>
+              <path
+                d="M31.5875 12.2536L48.2454 25.5476L32.9437 40.0198L16.2858 26.7258L31.5875 12.2536Z"
+                fill="#1F2937"
+              />
+              <path
+                d="M31.5875 19.5246L48.2454 32.8186L32.9437 47.2908L16.2858 33.9968L31.5875 19.5246Z"
+                fill="#1F2937"
+              />
+              <path
+                d="M31.5875 12.2536L46.8445 -2.17636L30.4307 -15.2756L15.1737 -0.845591L31.5875 12.2536ZM48.2454 25.5476L64.6591 38.6468L79.9161 24.2168L63.5024 11.1176L48.2454 25.5476ZM32.9437 40.0198L17.6867 54.4498L34.1004 67.549L49.3574 53.119L32.9437 40.0198ZM16.2858 26.7258L-0.127951 13.6266L-15.385 28.0566L1.02879 41.1558L16.2858 26.7258ZM31.5875 19.5246L46.8445 5.09464L30.4307 -8.00456L15.1737 6.42541L31.5875 19.5246ZM48.2454 32.8186L64.6591 45.9178L79.9161 31.4878L63.5024 18.3886L48.2454 32.8186ZM32.9437 47.2908L17.6867 61.7208L34.1004 74.82L49.3574 60.39L32.9437 47.2908ZM16.2858 33.9968L-0.127951 20.8976L-15.385 35.3276L1.02879 48.4268L16.2858 33.9968ZM16.3305 26.6836L32.9883 39.9776L63.5024 11.1176L46.8445 -2.17636L16.3305 26.6836ZM31.8316 12.4484L16.5299 26.9206L49.3574 53.119L64.6591 38.6468L31.8316 12.4484ZM48.2007 25.5899L31.5428 12.2959L1.02879 41.1558L17.6867 54.4498L48.2007 25.5899ZM32.6995 39.825L48.0012 25.3528L15.1737 -0.845591L-0.127951 13.6266L32.6995 39.825ZM16.3305 33.9546L32.9883 47.2486L63.5024 18.3886L46.8445 5.09464L16.3305 33.9546ZM31.8316 19.7194L16.5299 34.1916L49.3574 60.39L64.6591 45.9178L31.8316 19.7194ZM48.2007 32.8609L31.5428 19.5669L1.02879 48.4268L17.6867 61.7208L48.2007 32.8609ZM32.6995 47.096L48.0012 32.6238L15.1737 6.42541L-0.127951 20.8976L32.6995 47.096Z"
+                fill="#3490DC"
+                mask="url(#path-4-inside-1_7_35)"
+              />
+              <path
+                d="M31.5875 12.2536L46.8445 -2.17636L30.4307 -15.2756L15.1737 -0.845591L31.5875 12.2536ZM48.2454 25.5476L64.6591 38.6468L79.9161 24.2168L63.5024 11.1176L48.2454 25.5476ZM32.9437 40.0198L17.6867 54.4498L34.1004 67.549L49.3574 53.119L32.9437 40.0198ZM16.2858 26.7258L-0.127951 13.6266L-15.385 28.0566L1.02879 41.1558L16.2858 26.7258ZM31.5875 19.5246L46.8445 5.09464L30.4307 -8.00456L15.1737 6.42541L31.5875 19.5246ZM48.2454 32.8186L64.6591 45.9178L79.9161 31.4878L63.5024 18.3886L48.2454 32.8186ZM32.9437 47.2908L17.6867 61.7208L34.1004 74.82L49.3574 60.39L32.9437 47.2908ZM16.2858 33.9968L-0.127951 20.8976L-15.385 35.3276L1.02879 48.4268L16.2858 33.9968ZM16.3305 26.6836L32.9883 39.9776L63.5024 11.1176L46.8445 -2.17636L16.3305 26.6836ZM31.8316 12.4484L16.5299 26.9206L49.3574 53.119L64.6591 38.6468L31.8316 12.4484ZM48.2007 25.5899L31.5428 12.2959L1.02879 41.1558L17.6867 54.4498L48.2007 25.5899ZM32.6995 39.825L48.0012 25.3528L15.1737 -0.845591L-0.127951 13.6266L32.6995 39.825ZM16.3305 33.9546L32.9883 47.2486L63.5024 18.3886L46.8445 5.09464L16.3305 33.9546ZM31.8316 19.7194L16.5299 34.1916L49.3574 60.39L64.6591 45.9178L31.8316 19.7194ZM48.2007 32.8609L31.5428 19.5669L1.02879 48.4268L17.6867 61.7208L48.2007 32.8609ZM32.6995 47.096L48.0012 32.6238L15.1737 6.42541L-0.127951 20.8976L32.6995 47.096Z"
+                fill="#3490DC"
+                mask="url(#path-4-inside-1_7_35)"
+              />
+              <path
+                d="M31.5875 12.2536L46.8445 -2.17636L30.4307 -15.2756L15.1737 -0.845591L31.5875 12.2536ZM48.2454 25.5476L64.6591 38.6468L79.9161 24.2168L63.5024 11.1176L48.2454 25.5476ZM32.9437 40.0198L17.6867 54.4498L34.1004 67.549L49.3574 53.119L32.9437 40.0198ZM16.2858 26.7258L-0.127951 13.6266L-15.385 28.0566L1.02879 41.1558L16.2858 26.7258ZM31.5875 19.5246L46.8445 5.09464L30.4307 -8.00456L15.1737 6.42541L31.5875 19.5246ZM48.2454 32.8186L64.6591 45.9178L79.9161 31.4878L63.5024 18.3886L48.2454 32.8186ZM32.9437 47.2908L17.6867 61.7208L34.1004 74.82L49.3574 60.39L32.9437 47.2908ZM16.2858 33.9968L-0.127951 20.8976L-15.385 35.3276L1.02879 48.4268L16.2858 33.9968ZM16.3305 26.6836L32.9883 39.9776L63.5024 11.1176L46.8445 -2.17636L16.3305 26.6836ZM31.8316 12.4484L16.5299 26.9206L49.3574 53.119L64.6591 38.6468L31.8316 12.4484ZM48.2007 25.5899L31.5428 12.2959L1.02879 41.1558L17.6867 54.4498L48.2007 25.5899ZM32.6995 39.825L48.0012 25.3528L15.1737 -0.845591L-0.127951 13.6266L32.6995 39.825ZM16.3305 33.9546L32.9883 47.2486L63.5024 18.3886L46.8445 5.09464L16.3305 33.9546ZM31.8316 19.7194L16.5299 34.1916L49.3574 60.39L64.6591 45.9178L31.8316 19.7194ZM48.2007 32.8609L31.5428 19.5669L1.02879 48.4268L17.6867 61.7208L48.2007 32.8609ZM32.6995 47.096L48.0012 32.6238L15.1737 6.42541L-0.127951 20.8976L32.6995 47.096Z"
+                fill="#3490DC"
+                mask="url(#path-4-inside-1_7_35)"
+              />
+              <path
+                d="M31.5875 12.2536L46.8445 -2.17636L30.4307 -15.2756L15.1737 -0.845591L31.5875 12.2536ZM48.2454 25.5476L64.6591 38.6468L79.9161 24.2168L63.5024 11.1176L48.2454 25.5476ZM32.9437 40.0198L17.6867 54.4498L34.1004 67.549L49.3574 53.119L32.9437 40.0198ZM16.2858 26.7258L-0.127951 13.6266L-15.385 28.0566L1.02879 41.1558L16.2858 26.7258ZM31.5875 19.5246L46.8445 5.09464L30.4307 -8.00456L15.1737 6.42541L31.5875 19.5246ZM48.2454 32.8186L64.6591 45.9178L79.9161 31.4878L63.5024 18.3886L48.2454 32.8186ZM32.9437 47.2908L17.6867 61.7208L34.1004 74.82L49.3574 60.39L32.9437 47.2908ZM16.2858 33.9968L-0.127951 20.8976L-15.385 35.3276L1.02879 48.4268L16.2858 33.9968ZM16.3305 26.6836L32.9883 39.9776L63.5024 11.1176L46.8445 -2.17636L16.3305 26.6836ZM31.8316 12.4484L16.5299 26.9206L49.3574 53.119L64.6591 38.6468L31.8316 12.4484ZM48.2007 25.5899L31.5428 12.2959L1.02879 41.1558L17.6867 54.4498L48.2007 25.5899ZM32.6995 39.825L48.0012 25.3528L15.1737 -0.845591L-0.127951 13.6266L32.6995 39.825ZM16.3305 33.9546L32.9883 47.2486L63.5024 18.3886L46.8445 5.09464L16.3305 33.9546ZM31.8316 19.7194L16.5299 34.1916L49.3574 60.39L64.6591 45.9178L31.8316 19.7194ZM48.2007 32.8609L31.5428 19.5669L1.02879 48.4268L17.6867 61.7208L48.2007 32.8609ZM32.6995 47.096L48.0012 32.6238L15.1737 6.42541L-0.127951 20.8976L32.6995 47.096Z"
+                fill="#3490DC"
+                mask="url(#path-4-inside-1_7_35)"
+              />
+              <path
+                d="M31.5875 12.2536L46.8445 -2.17636L30.4307 -15.2756L15.1737 -0.845591L31.5875 12.2536ZM48.2454 25.5476L64.6591 38.6468L79.9161 24.2168L63.5024 11.1176L48.2454 25.5476ZM32.9437 40.0198L17.6867 54.4498L34.1004 67.549L49.3574 53.119L32.9437 40.0198ZM16.2858 26.7258L-0.127951 13.6266L-15.385 28.0566L1.02879 41.1558L16.2858 26.7258ZM31.5875 19.5246L46.8445 5.09464L30.4307 -8.00456L15.1737 6.42541L31.5875 19.5246ZM48.2454 32.8186L64.6591 45.9178L79.9161 31.4878L63.5024 18.3886L48.2454 32.8186ZM32.9437 47.2908L17.6867 61.7208L34.1004 74.82L49.3574 60.39L32.9437 47.2908ZM16.2858 33.9968L-0.127951 20.8976L-15.385 35.3276L1.02879 48.4268L16.2858 33.9968ZM16.3305 26.6836L32.9883 39.9776L63.5024 11.1176L46.8445 -2.17636L16.3305 26.6836ZM31.8316 12.4484L16.5299 26.9206L49.3574 53.119L64.6591 38.6468L31.8316 12.4484ZM48.2007 25.5899L31.5428 12.2959L1.02879 41.1558L17.6867 54.4498L48.2007 25.5899ZM32.6995 39.825L48.0012 25.3528L15.1737 -0.845591L-0.127951 13.6266L32.6995 39.825ZM16.3305 33.9546L32.9883 47.2486L63.5024 18.3886L46.8445 5.09464L16.3305 33.9546ZM31.8316 19.7194L16.5299 34.1916L49.3574 60.39L64.6591 45.9178L31.8316 19.7194ZM48.2007 32.8609L31.5428 19.5669L1.02879 48.4268L17.6867 61.7208L48.2007 32.8609ZM32.6995 47.096L48.0012 32.6238L15.1737 6.42541L-0.127951 20.8976L32.6995 47.096Z"
+                fill="#3490DC"
+                mask="url(#path-4-inside-1_7_35)"
+              />
+              <mask
+                id="path-6-inside-2_7_35"
+                fill="white"
+              >
+                <path d="M31.8002 21.6165L41.7949 29.5929L32.6139 38.2763L22.6192 30.2999L31.8002 21.6165Z" />
+              </mask>
+              <path
+                d="M31.8002 21.6165L41.7949 29.5929L32.6139 38.2763L22.6192 30.2999L31.8002 21.6165Z"
+                fill="#1F2937"
+              />
+              <path
+                d="M31.8002 21.6165L47.0572 7.18655L30.6434 -5.91264L15.3864 8.51732L31.8002 21.6165ZM41.7949 29.5929L58.2086 42.6921L73.4656 28.2621L57.0519 15.163L41.7949 29.5929ZM32.6139 38.2763L17.3569 52.7062L33.7706 65.8054L49.0276 51.3754L32.6139 38.2763ZM22.6192 30.2999L6.2054 17.2007L-9.0516 31.6306L7.36215 44.7298L22.6192 30.2999ZM16.5432 36.0465L26.5379 44.0229L57.0519 15.163L47.0572 7.18655L16.5432 36.0465ZM25.3811 16.4937L16.2001 25.1771L49.0276 51.3754L58.2086 42.6921L25.3811 16.4937ZM47.8709 23.8463L37.8762 15.8699L7.36215 44.7298L17.3569 52.7062L47.8709 23.8463ZM39.0329 43.399L48.2139 34.7157L15.3864 8.51732L6.2054 17.2007L39.0329 43.399Z"
+                fill="#3490DC"
+                mask="url(#path-6-inside-2_7_35)"
+              />
+              <path
+                d="M31.8002 21.6165L47.0572 7.18655L30.6434 -5.91264L15.3864 8.51732L31.8002 21.6165ZM41.7949 29.5929L58.2086 42.6921L73.4656 28.2621L57.0519 15.163L41.7949 29.5929ZM32.6139 38.2763L17.3569 52.7062L33.7706 65.8054L49.0276 51.3754L32.6139 38.2763ZM22.6192 30.2999L6.2054 17.2007L-9.0516 31.6306L7.36215 44.7298L22.6192 30.2999ZM16.5432 36.0465L26.5379 44.0229L57.0519 15.163L47.0572 7.18655L16.5432 36.0465ZM25.3811 16.4937L16.2001 25.1771L49.0276 51.3754L58.2086 42.6921L25.3811 16.4937ZM47.8709 23.8463L37.8762 15.8699L7.36215 44.7298L17.3569 52.7062L47.8709 23.8463ZM39.0329 43.399L48.2139 34.7157L15.3864 8.51732L6.2054 17.2007L39.0329 43.399Z"
+                fill="#3490DC"
+                mask="url(#path-6-inside-2_7_35)"
+              />
+              <path
+                d="M31.8002 21.6165L47.0572 7.18655L30.6434 -5.91264L15.3864 8.51732L31.8002 21.6165ZM41.7949 29.5929L58.2086 42.6921L73.4656 28.2621L57.0519 15.163L41.7949 29.5929ZM32.6139 38.2763L17.3569 52.7062L33.7706 65.8054L49.0276 51.3754L32.6139 38.2763ZM22.6192 30.2999L6.2054 17.2007L-9.0516 31.6306L7.36215 44.7298L22.6192 30.2999ZM16.5432 36.0465L26.5379 44.0229L57.0519 15.163L47.0572 7.18655L16.5432 36.0465ZM25.3811 16.4937L16.2001 25.1771L49.0276 51.3754L58.2086 42.6921L25.3811 16.4937ZM47.8709 23.8463L37.8762 15.8699L7.36215 44.7298L17.3569 52.7062L47.8709 23.8463ZM39.0329 43.399L48.2139 34.7157L15.3864 8.51732L6.2054 17.2007L39.0329 43.399Z"
+                fill="#3490DC"
+                mask="url(#path-6-inside-2_7_35)"
+              />
+              <path
+                d="M31.8002 21.6165L47.0572 7.18655L30.6434 -5.91264L15.3864 8.51732L31.8002 21.6165ZM41.7949 29.5929L58.2086 42.6921L73.4656 28.2621L57.0519 15.163L41.7949 29.5929ZM32.6139 38.2763L17.3569 52.7062L33.7706 65.8054L49.0276 51.3754L32.6139 38.2763ZM22.6192 30.2999L6.2054 17.2007L-9.0516 31.6306L7.36215 44.7298L22.6192 30.2999ZM16.5432 36.0465L26.5379 44.0229L57.0519 15.163L47.0572 7.18655L16.5432 36.0465ZM25.3811 16.4937L16.2001 25.1771L49.0276 51.3754L58.2086 42.6921L25.3811 16.4937ZM47.8709 23.8463L37.8762 15.8699L7.36215 44.7298L17.3569 52.7062L47.8709 23.8463ZM39.0329 43.399L48.2139 34.7157L15.3864 8.51732L6.2054 17.2007L39.0329 43.399Z"
+                fill="#3490DC"
+                mask="url(#path-6-inside-2_7_35)"
+              />
+              <path
+                d="M31.8002 21.6165L47.0572 7.18655L30.6434 -5.91264L15.3864 8.51732L31.8002 21.6165ZM41.7949 29.5929L58.2086 42.6921L73.4656 28.2621L57.0519 15.163L41.7949 29.5929ZM32.6139 38.2763L17.3569 52.7062L33.7706 65.8054L49.0276 51.3754L32.6139 38.2763ZM22.6192 30.2999L6.2054 17.2007L-9.0516 31.6306L7.36215 44.7298L22.6192 30.2999ZM16.5432 36.0465L26.5379 44.0229L57.0519 15.163L47.0572 7.18655L16.5432 36.0465ZM25.3811 16.4937L16.2001 25.1771L49.0276 51.3754L58.2086 42.6921L25.3811 16.4937ZM47.8709 23.8463L37.8762 15.8699L7.36215 44.7298L17.3569 52.7062L47.8709 23.8463ZM39.0329 43.399L48.2139 34.7157L15.3864 8.51732L6.2054 17.2007L39.0329 43.399Z"
+                fill="#DCD4DB"
+                fill-opacity="0.81"
+                mask="url(#path-6-inside-2_7_35)"
+              />
+            </svg>
+
+            <h5 class="text-2xl font-bold text-white mt-11">Design Grafis</h5>
+            <p class="mt-5 mb-4 text-base leading-5 text-gray">As a graphic designer, I have experience in developing branding materials, marketing collateral, and digital graphics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Services -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Type JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- Owl Corousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#mobile-menu-btn').click(function () {
+          $('#mobile-menu').slideToggle();
+        });
+      });
+    </script>
+    <script>
+      var typed = new Typed('#typed', {
+        strings: ['Product Designer', 'Front-end Development'],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

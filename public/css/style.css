@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Button */
+.btn-primary {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.card-service {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card-service:hover {
+  transform: translateY(-5px);
+}
