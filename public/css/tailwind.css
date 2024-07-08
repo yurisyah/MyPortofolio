@@ -674,6 +674,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -812,6 +816,11 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
+.bg-deep-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 10 15 / var(--tw-bg-opacity));
+}
+
 .object-right-top {
   -o-object-position: right top;
      object-position: right top;
@@ -860,6 +869,11 @@ video {
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-3 {
